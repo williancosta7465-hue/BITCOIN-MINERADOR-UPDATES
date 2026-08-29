@@ -2,8 +2,8 @@
   "version": "2.0.6",
   "notes": "Ícone oficial; perfis de CPU adaptativos; instalação nova sem carteira predefinida; auto-início desligado por padrão em novos computadores.",
   "download_url": "https://raw.githubusercontent.com/williancosta7465-hue/BITCOIN-MINERADOR-UPDATES/main/releases/v2.0.6/BitcoinMineradorSolo_v2.0.6.zip",
-  "sha256": "ffcfe4cf7affbc821af1114937c5eac1779aea964b5292d85684f6251b3fee11",
-  "exe_sha256": "f46d976b11fbab154f757d9f8e050fa526a1d59f3da19c738ee7feb9e0d49f3b",
-  "published_at": "2026-08-29T15:27:55.295904+00:00",
+  "sha256": "f7eefd38326a784989af6b8ebfd8e256497e94ed65a5ed98e432bc6c52b6ba64",
+  "exe_sha256": "503d1225241a77330e6263a9ff65b18774e7a36953000b674bc056ad694c66c5",
+  "published_at": "2026-08-29T15:28:17.090020+00:00",
   "channel": "stable"
 }
