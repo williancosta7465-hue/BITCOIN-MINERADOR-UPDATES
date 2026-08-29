@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6",
-  "notes": "Ícone oficial; perfis de CPU adaptativos; instalação nova sem carteira predefinida; auto-início desligado por padrão em novos computadores.",
-  "download_url": "https://raw.githubusercontent.com/williancosta7465-hue/BITCOIN-MINERADOR-UPDATES/main/releases/v2.0.6/BitcoinMineradorSolo_v2.0.6.zip",
-  "sha256": "f7eefd38326a784989af6b8ebfd8e256497e94ed65a5ed98e432bc6c52b6ba64",
-  "exe_sha256": "503d1225241a77330e6263a9ff65b18774e7a36953000b674bc056ad694c66c5",
-  "published_at": "2026-08-29T15:28:17.090020+00:00",
+  "version": "2.0.7",
+  "notes": "Correção do atualizador: reinício com ambiente PyInstaller limpo; evita reutilização de pasta _MEI antiga; staging do atualizador em LocalAppData; mantém ícone oficial e perfis de CPU adaptativos.",
+  "download_url": "https://raw.githubusercontent.com/williancosta7465-hue/BITCOIN-MINERADOR-UPDATES/main/releases/v2.0.7/BitcoinMineradorSolo_v2.0.7.zip",
+  "sha256": "921bf041542d77485462613c6986700dbdf4dc36a3d32737deff2be8ff7c17fc",
+  "exe_sha256": "ba52c8c903233b8a3c06338ba161ba008ecd1ef545399e893a799c50bc1a4443",
+  "published_at": "2026-08-29T15:30:24.422742+00:00",
   "channel": "stable"
 }
