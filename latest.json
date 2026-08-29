@@ -1,9 +1,9 @@
 {
-  "version": "2.0.8",
-  "notes": "Correção do carregamento python311.dll: o onefile passa a extrair somente em %LOCALAPPDATA%\\BitcoinMineradorSolo\\runtime, sem depender do TEMP geral do Windows; mantém reinício limpo, rollback, ícone oficial e perfis adaptativos.",
-  "download_url": "https://raw.githubusercontent.com/williancosta7465-hue/BITCOIN-MINERADOR-UPDATES/main/releases/v2.0.8/BitcoinMineradorSolo_v2.0.8.zip",
-  "sha256": "9abac0b90bc205b5537ad78567b8a6327f0acbe4c825bb1ca13de439b8310d62",
-  "exe_sha256": "ac7f02fed87140319f1f1bcf014ed63ae5a83d019561462a63853fc379608b9a",
-  "published_at": "2026-08-29T15:36:40.069194+00:00",
-  "channel": "stable"
+  "version": "2.0.5",
+  "notes": "Canal temporariamente pausado enquanto a nova arquitetura de atualização é validada.",
+  "download_url": "",
+  "sha256": "",
+  "exe_sha256": "",
+  "published_at": "2026-08-29T15:41:00+00:00",
+  "channel": "stable-paused"
 }
