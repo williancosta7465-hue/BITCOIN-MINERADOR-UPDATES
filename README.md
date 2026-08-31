@@ -1,13 +1,12 @@
 # ₿ Bitcoin Minerador Solo
 
-Minerador experimental de Bitcoin em **solo mining via CKPool** para Windows, com histórico persistente, atualização automática, Watchdog 2.0 e diagnóstico 24/7.
+Minerador experimental de Bitcoin em **solo mining via CKPool** para Windows, com histórico persistente, atualização automática, Watchdog 2.0, diagnóstico 24/7 e monitoramento online opcional.
 
-> **Versão estável atual: v2.1.3**  
-> **v2.2.0: monitoramento pelo celular em desenvolvimento e testes**
+> **Versão estável atual: v2.2.0**
 
 ## ⬇️ BAIXAR O MINERADOR
 
-### [Baixar Bitcoin Minerador Solo v2.1.3 — Windows x64](https://raw.githubusercontent.com/williancosta7465-hue/BITCOIN-MINERADOR-UPDATES/main/releases/v2.1.3/BitcoinMineradorSolo_Setup_v2.1.3.exe)
+### [Baixar Bitcoin Minerador Solo v2.2.0 — Windows x64](https://raw.githubusercontent.com/williancosta7465-hue/BITCOIN-MINERADOR-UPDATES/main/releases/v2.2.0/BitcoinMineradorSolo_Setup_v2.2.0.exe)
 
 O instalador usa arquitetura `onedir` e instala o programa em uma pasta fixa do Windows. Depois da instalação, as próximas versões estáveis podem ser recebidas pelo botão **Verificar atualizações** dentro do próprio programa.
 
@@ -24,6 +23,7 @@ Para conferir a versão publicada e os hashes SHA-256, consulte [`latest-v2.json
 - Watchdog 2.0 com heartbeat individual dos workers
 - Página **Diagnóstico 24/7**
 - Atualização automática com verificação SHA-256
+- Página **Monitoramento** para servidor próprio
 
 ## Como começar
 
@@ -36,29 +36,32 @@ Para conferir a versão publicada e os hashes SHA-256, consulte [`latest-v2.json
 
 ## 📱 Monitoramento pelo celular — v2.2.0
 
-A v2.2.0 está sendo preparada para permitir acompanhar o minerador de qualquer lugar usando um **PWA**: um painel que pode ser adicionado à tela inicial do celular sem APK e sem Play Store.
+A v2.2.0 permite acompanhar o minerador de qualquer lugar usando um **PWA**, que pode ser adicionado à tela inicial do celular sem APK e sem Play Store.
 
-Arquitetura prevista:
+Arquitetura:
 
 `Bitcoin Minerador Solo → seu servidor Cloudflare → Bitcoin Minerador Monitor no celular`
 
-O painel exibirá status online/offline, hashrate, hashes, shares, melhor dificuldade, blocos, workers, último job, tempo minerando, quedas, tempo offline, watchdog e eventos recentes.
+O painel exibe status online/offline, hashrate, hashes, shares, melhor dificuldade, blocos, workers, último job, tempo minerando, quedas, tempo offline, watchdog e eventos recentes.
 
-### Como será a configuração
+### Configuração
 
 1. Criar uma conta gratuita na Cloudflare.
-2. Criar um pequeno servidor Worker + D1 usando o modelo fornecido com o projeto.
-3. Criar duas chaves exclusivas do monitoramento: `DEVICE_KEY` e `VIEW_KEY`.
+2. Criar o servidor Worker + D1 usando o modelo do projeto.
+3. Criar duas chaves exclusivas: `DEVICE_KEY` e `VIEW_KEY`.
 4. No minerador, abrir **Monitoramento**, informar a URL do servidor e as duas chaves e clicar **Testar conexão**.
 5. Clicar **Conectar celular • QR Code**.
 6. Escanear o QR Code com o celular.
 7. Adicionar **Bitcoin Minerador Monitor** à tela inicial.
 
-Cada pessoa poderá usar **a própria conta Cloudflare e o próprio servidor**. O programa não depende de uma conta Cloudflare pertencente ao desenvolvedor.
+Cada pessoa pode usar **a própria conta Cloudflare e o próprio servidor**. O programa não depende de um servidor central do desenvolvedor.
 
-### O que NÃO deve ser informado
+### Segurança do monitoramento
 
-O monitoramento não precisa de senha da Cloudflare, token administrativo da Cloudflare, token do GitHub, seed, chave privada ou senha da carteira. O minerador utilizará somente as duas chaves específicas do monitoramento.
+- `DEVICE_KEY` autoriza o minerador a enviar status e eventos.
+- `VIEW_KEY` autoriza o celular a consultar o painel.
+- As chaves devem ficar apenas no servidor e nos dispositivos autorizados.
+- O snapshot de monitoramento não envia seed, chave privada, senha da carteira ou token administrativo.
 
 ## Segurança
 
